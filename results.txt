@@ -1,0 +1,148 @@
+Dataset has 2647095 rows spanning years 2014 to 2023
+
+Top 5 jobs by total employment:
+Office and Administrative Support Occupations: 1,459,144,810
+Food Preparation and Serving Related Occupations: 952,643,790
+Sales and Related Occupations: 949,525,960
+Transportation and Material Moving Occupations: 785,383,470
+Healthcare Practitioners and Technical Occupations: 688,132,020
+
+Analyzing: Office and Administrative Support Occupations
+   YEAR      TOT_EMP
+0  2014  160274870.0
+1  2015  162240260.0
+2  2016  163252510.0
+3  2017  160242270.0
+4  2018  153319520.0
+5  2019  137410650.0
+6  2020  131716050.0
+7  2021  129277610.0
+8  2022  131083420.0
+9  2023  130327650.0
+  Linear Regression - Actual: 130,327,650, Predicted: 122,516,494, MAPE: 5.99%
+  Random Forest - Actual: 130,327,650, Predicted: 130,929,203, MAPE: 0.46%
+10:30:16 - cmdstanpy - INFO - Chain [1] start processing
+10:30:16 - cmdstanpy - INFO - Chain [1] done processing
+  Prophet - Actual: 130,327,650, Predicted: 121,068,795, MAPE: 7.10%
+
+Analyzing: Food Preparation and Serving Related Occupations
+   YEAR      TOT_EMP
+0  2014   95011450.0
+1  2015   97376620.0
+2  2016  100215910.0
+3  2017  101820490.0
+4  2018   99520810.0
+5  2019  100478820.0
+6  2020   83655460.0
+7  2021   83197160.0
+8  2022   92943580.0
+9  2023   98423490.0
+  Linear Regression - Actual: 98,423,490, Predicted: 87,807,331, MAPE: 10.79%
+  Random Forest - Actual: 98,423,490, Predicted: 90,689,761, MAPE: 7.86%
+10:30:16 - cmdstanpy - INFO - Chain [1] start processing
+10:30:16 - cmdstanpy - INFO - Chain [1] done processing
+  Prophet - Actual: 98,423,490, Predicted: 87,924,786, MAPE: 10.67%
+
+Analyzing: Sales and Related Occupations
+   YEAR      TOT_EMP
+0  2014  102914830.0
+1  2015  103978200.0
+2  2016  104230130.0
+3  2017  101369820.0
+4  2018   97374450.0
+5  2019   82049610.0
+6  2020   88504400.0
+7  2021   89105600.0
+8  2022   89565560.0
+9  2023   90433360.0
+  Linear Regression - Actual: 90,433,360, Predicted: 83,055,854, MAPE: 8.16%
+  Random Forest - Actual: 90,433,360, Predicted: 89,258,167, MAPE: 1.30%
+10:30:17 - cmdstanpy - INFO - Chain [1] start processing
+10:30:17 - cmdstanpy - INFO - Chain [1] done processing
+  Prophet - Actual: 90,433,360, Predicted: 81,486,514, MAPE: 9.89%
+
+Analyzing: Transportation and Material Moving Occupations
+   YEAR     TOT_EMP
+0  2014  66669280.0
+1  2015  69273890.0
+2  2016  70525800.0
+3  2017  70728800.0
+4  2018  69839810.0
+5  2019  85163130.0
+6  2020  82975310.0
+7  2021  85860980.0
+8  2022  91828170.0
+9  2023  92518300.0
+  Linear Regression - Actual: 92,518,300, Predicted: 92,795,867, MAPE: 0.30%
+  Random Forest - Actual: 92,518,300, Predicted: 90,001,075, MAPE: 2.72%
+10:30:17 - cmdstanpy - INFO - Chain [1] start processing
+10:30:17 - cmdstanpy - INFO - Chain [1] done processing
+  Prophet - Actual: 92,518,300, Predicted: 94,239,901, MAPE: 1.86%
+
+Analyzing: Healthcare Practitioners and Technical Occupations
+   YEAR     TOT_EMP
+0  2014  64513280.0
+1  2015  65912980.0
+2  2016  68298420.0
+3  2017  69592310.0
+4  2018  68498600.0
+5  2019  68505220.0
+6  2020  68233820.0
+7  2021  69658430.0
+8  2022  71443430.0
+9  2023  73475530.0
+  Linear Regression - Actual: 73,475,530, Predicted: 71,440,221, MAPE: 2.77%
+  Random Forest - Actual: 73,475,530, Predicted: 70,838,693, MAPE: 3.59%
+10:30:17 - cmdstanpy - INFO - Chain [1] start processing
+10:30:24 - cmdstanpy - INFO - Chain [1] done processing
+  Prophet - Actual: 73,475,530, Predicted: 73,147,414, MAPE: 0.45%
+Saved plot for Linear Regression as 'top_5_jobs_linear_regression.png'
+
+Average MAPE with Linear Regression: 5.60%
+
+===== LINEAR REGRESSION RESULTS =====
+                                                 Job         Actual      Predicted  MAPE
+0      Office and Administrative Support Occupations 130,327,650.00 122,516,493.61  5.99
+1   Food Preparation and Serving Related Occupations  98,423,490.00  87,807,330.83 10.79
+2                      Sales and Related Occupations  90,433,360.00  83,055,854.17  8.16
+3     Transportation and Material Moving Occupations  92,518,300.00  92,795,867.22  0.30
+4  Healthcare Practitioners and Technical Occupat...  73,475,530.00  71,440,220.56  2.77
+Saved plot for Random Forest as 'top_5_jobs_random_forest.png'
+
+Average MAPE with Random Forest: 3.19%
+
+===== RANDOM FOREST RESULTS =====
+                                                 Job         Actual      Predicted  MAPE
+0      Office and Administrative Support Occupations 130,327,650.00 130,929,202.90  0.46
+1   Food Preparation and Serving Related Occupations  98,423,490.00  90,689,760.80  7.86
+2                      Sales and Related Occupations  90,433,360.00  89,258,167.00  1.30
+3     Transportation and Material Moving Occupations  92,518,300.00  90,001,074.80  2.72
+4  Healthcare Practitioners and Technical Occupat...  73,475,530.00  70,838,693.10  3.59
+Saved plot for Prophet as 'top_5_jobs_prophet.png'
+
+Average MAPE with Prophet: 5.99%
+
+===== PROPHET RESULTS =====
+                                                 Job         Actual      Predicted  MAPE
+0      Office and Administrative Support Occupations 130,327,650.00 121,068,794.68  7.10
+1   Food Preparation and Serving Related Occupations  98,423,490.00  87,924,786.11 10.67
+2                      Sales and Related Occupations  90,433,360.00  81,486,514.03  9.89
+3     Transportation and Material Moving Occupations  92,518,300.00  94,239,901.15  1.86
+4  Healthcare Practitioners and Technical Occupat...  73,475,530.00  73,147,414.50  0.45
+
+===== MODEL COMPARISON =====
+                                                 Job  Linear Regression MAPE  Random Forest MAPE  Prophet MAPE
+0      Office and Administrative Support Occupations                    5.99                0.46          7.10
+1   Food Preparation and Serving Related Occupations                   10.79                7.86         10.67
+2                      Sales and Related Occupations                    8.16                1.30          9.89
+3     Transportation and Material Moving Occupations                    0.30                2.72          1.86
+4  Healthcare Practitioners and Technical Occupat...                    2.77                3.59          0.45
+
+===== BEST MODEL BY JOB =====
+Office and Administrative Support Occupations: Random Forest (MAPE: 0.46%)
+Food Preparation and Serving Related Occupations: Random Forest (MAPE: 7.86%)
+Sales and Related Occupations: Random Forest (MAPE: 1.30%)
+Transportation and Material Moving Occupations: Linear Regression (MAPE: 0.30%)
+Healthcare Practitioners and Technical Occupations: Prophet (MAPE: 0.45%)
+
+Best overall model: Random Forest (Avg MAPE: 3.19%)
